@@ -9,6 +9,21 @@ body {
     margin: 0 0;
 }
 
+#content-divider {
+    padding: 5px 0;
+    width: 100%;
+    background-color: #70B596;
+    position: relative;
+    top: 600px;
+}
+
+#content-divider h2 {
+    color: white;
+    opacity: 0.9;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+
 #header-section {
     position: absolute;
     width: 100%;
@@ -159,6 +174,9 @@ body {
 }
 
 #products-wrapper {
+    background-image: url("./images/andrei-ionov-7m7oOCpzaxI-unsplash\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
     background-color: #e2d3b3;
     position: relative;
     top: 600px;
@@ -174,18 +192,24 @@ body {
     box-shadow: 1px 1px 10px black;
 }
 
+.product-box h1 {
+    padding: 35px 100px 15px 75px;
+    color: white;
+    opacity: 0.9;
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+}
+
 @media screen and (max-width: 570px) {
     .product-box {
         height: 410px;
     }
+
+    .product-box h1 {
+        padding: 30px 100px 10px 30px;
+    }
 }
 
-.product-box h1 {
-    padding: 25px 50px;
-    color: white;
-    opacity: 0.9;
-    font-family: 'Lobster', cursive;
-}
 
 .product-box p {
     color: white;
@@ -287,8 +311,64 @@ body {
     opacity: 0.9;
 }
 
+#location-wrapper {
+    background-image: url("./images/location-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#location iframe {
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+    margin: 25px;
+}
+
+#location-info {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    max-width: 800px;
+    margin: 25px;
+}
+
+#location-info h3 {
+    margin: 25px;
+    font-family: 'Rozha One', serif;
+    font-size: 22px;
+    color: white;
+    opacity: 0.9;
+    text-shadow: 1px 1px 10px black;
+}
+
+#location-info p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    color: white;
+    opacity: 0.9;
+    text-shadow: 2px 2px 10px black;
+}
+
+@media screen and (max-width: 800px) {
+    #location-wrapper {
+        height: 800px;
+        flex-wrap: wrap;
+    }
+}
+
 footer {
-    background-color: #8BE2BB;
+    background-color: #70B596;
     position: relative;
     top: 600px;
     color: rgb(0, 0, 0);

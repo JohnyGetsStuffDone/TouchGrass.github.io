@@ -1,0 +1,300 @@
+body {
+    margin: 0 0;
+    padding: 0 0;
+    color: rgb(255, 255, 255);
+    background-color: #fffafa;
+}
+
+* {
+    margin: 0 0;
+}
+
+#header-section {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    background-image: url("./images/header-pinetrees.jpg");
+    background-size: cover;
+}
+
+#logo {
+    display: inline-block;
+    padding: 10px 50px;
+    width: 25%;
+    font-family: 'Lobster', cursive;
+    opacity: 0.9;
+}
+
+#nav {
+    float: right;
+    display: inline;
+    width: 60%;
+    max-width: 800px;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.479);
+    border-bottom-left-radius: 50px;
+}
+
+#nav ul li {
+    display: inline-block;
+}
+
+#nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+#nav a:hover {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    #logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        background-color: rgba(0, 0, 0, 0.479);
+    }
+
+    #nav {
+        display: block;
+        width: 100%;
+    }
+
+    #nav ul {
+        border-radius: 0;
+    }
+}
+
+#vertical-header-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-info {
+    width: 60%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#header-info h1 {
+    margin-top: 120px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 38px;
+    opacity: 0.9;
+}
+
+#header-info h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+#header-button {
+    width: 200px;
+    margin: 50px auto;
+}
+
+#header-button a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.918);
+    width: 150px;
+    background-color: #70B596;
+    border-radius: 50px;
+    padding: 24px;
+    border: 1px solid #70B596;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1px;
+}
+
+#header-button a:hover {
+    background-color: #8be2bb;
+    border: 1px solid #8be2bb;
+}
+
+#header-button a:active {
+    border: none;
+}
+
+@media screen and (max-width: 800px) {
+    #vertical-header-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header-info {
+        width: 100%;
+    }
+
+    #header-info h1 {
+        width: 95%;
+        font-size: 28px;
+    }
+
+    #header-info h2 {
+        width: 90%;
+        margin: 15px auto;
+        font-size: 16px;
+        
+    }
+}
+
+#products-wrapper {
+    background-color: #e2d3b3;
+    position: relative;
+    top: 600px;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.product-box {
+    background-color: #70B596;
+    margin: 20px 20px;
+    width: 400px;
+    height: 380px;
+    box-shadow: 1px 1px 10px black;
+}
+
+@media screen and (max-width: 570px) {
+    .product-box {
+        height: 410px;
+    }
+}
+
+.product-box h1 {
+    padding: 25px 50px;
+    color: white;
+    opacity: 0.9;
+    font-family: 'Lobster', cursive;
+}
+
+.product-box p {
+    color: white;
+    opacity: 0.9;
+    padding: 10px 30px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.lineup {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 15%;
+}
+
+#grass, #psych {
+    flex: 1 1 300px;
+}
+
+#grass .cover-img {
+    width: 100%;
+    height: 200px;
+    background-image: url("./images/green-grass.jpg");
+    background-size: cover;
+}
+
+#shirts, #plushies {
+    flex: 5 1 500px;
+}
+
+#shirts .cover-img {
+    width: 100%;
+    height: 200px;
+    background-image: url("./images/t-shirts.jpg");
+    background-size: cover;
+}
+
+#plushies .cover-img {
+    width: 100%;
+    height: 200px;
+    background-image: url("./images/plushie.jpg");
+    background-size: cover;
+}
+
+#psych .cover-img {
+    width: 100%;
+    height: 200px;
+    background-image: url("./images/psych.jpg");
+    background-size: cover;
+}
+
+#employees {
+    position: relative;
+    top: 600px;
+    background-color: #4E9676;
+}
+
+#emp-list {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.employee {
+    margin: 15px 10px;
+    width: 200px;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.employee img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.employee-info {
+    margin-top: 50px;
+}
+
+.employee h3 {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.employee h4 {
+    font-family: 'Lobster', cursive;
+    font-family: 'Libre Baskerville', serif;
+    opacity: 0.9;
+}
+
+footer {
+    background-color: #8BE2BB;
+    position: relative;
+    top: 600px;
+    color: rgb(0, 0, 0);
+    opacity: 0.9;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 12px;
+}
